@@ -1,4 +1,9 @@
 <?php
+$title = "Registros";
+ob_start();
+?>
+
+<?php
 session_start();
 $no_cuenta= $_SESSION['usermane'];//413112576
 
@@ -65,11 +70,11 @@ if ( $count>0 ){
     <h1><a href='EliminarUsuario.php'>ElimnarUsuario</a></h1>
     <h1><a href='Registro.php'>Registro</a></h1>
     ";
-    
-
-
 
 }
+?>
 
-
+<?php
+$content = ob_get_clean();
+include './CSS/Plantilla.php';
 ?>

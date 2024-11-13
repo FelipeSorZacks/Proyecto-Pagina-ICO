@@ -1,22 +1,19 @@
 <?php
-//2019
-//170 000 km 
-// trax
+$title = "Conexion";
 
-// $host_db = "localhost";
-// $user_db = "id20310581_aaronico";
-// $pass_db = "Hw\&J=21JXiLsZ~<";
-// $db_name = "id20310581_test_php";
-$host_db = "localhost:3308";
+$host_db = "localhost:3306";
 $user_db = "root";
-$pass_db = "123456";
+$pass_db = "Sharilamejor1";
 $db_name = "test_php";
 
+$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 
-$conexion = new mysqli($host_db,$user_db,$pass_db,$db_name);
-
-if($conexion->connect_error){
-    echo"<h1>MySQL no le  esta dando permisos para ejecutar consultas verificar error</h1>";
+if ($conexion->connect_error) {
+    echo "<h1>MySQL no le está dando permisos para ejecutar consultas. Verificar error: " . $conexion->connect_error . "</h1>";
+} else {
+    echo "<h1>Conexión exitosa a la BD</h1>";
 }
 
+
+$content = ob_get_clean();
 ?>

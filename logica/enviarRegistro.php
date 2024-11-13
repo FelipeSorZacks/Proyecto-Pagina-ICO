@@ -1,5 +1,5 @@
 <?php
-include "./conexion.php";
+include "./logica/conexion.php";
 mysqli_set_charset($conexion,'utf8');
 $nombreUser=$_POST['nombre_usuario'];
 

@@ -1,21 +1,28 @@
+<?php
+$title = "Registro";
+ob_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" >
-    <title>Document</title>
 </head>
 <body>
 
     <header  >
-        <h3>Registro en mi DB</h3>
+        <h3>Registro</h3>
     </header>
-    
+    <div>
+        
+    </div>
     <div>
         <form action="./logica/enviarRegistro.php" method="post">
         <!-- <form action="./tempo.php" method="get"> -->
             <hr>
+            &nbsp;
             <div>
                 <label for="nombre_usuario">Ingresa nombre usuario:</label>
                 <input type="text" name="nombre_usuario" required maxlength="100" placeholder="Ingresa tu Nombre">
@@ -24,7 +31,7 @@
                 <input type="text" name="carrera" required maxlength="100" placeholder="Ingresa tu carrera">
                 <br><br>
                 <label for="email">Correo:</label>
-                <input type="mail" name="email" required maxlength="100" placeholder="Ingresa tu correo">
+                <input type="text" name="email" required maxlength="100" placeholder="Ingresa tu correo">
                 <br><br>
                 <label for="no_cuenta">Numero de cuenta:</label>
                 <input type="text" name="no_cuenta" required maxlength="100" placeholder="Ingresa tu numero de cuenta">
@@ -39,11 +46,19 @@
                 <input type="password" name="password" required maxlength="8" placeholder="Ingresa tu contraseña">
                 <br><br>
             </div>
-             <button type="submit" name="submit"  >Enviar registro</button>
+            <button type="submit" name="submit" class="btn waves-effect waves-light blue">Enviar registro</button>
         </form>
     </div>
 </body>
 </html>
 
-<a href='./Registro.php'>Nuevo registro</a>
-<a href='./Principal.php'>Ver registro</a>
+<div class="center-align" style="margin-top: 20px;">
+        <a href='./Registro.php' class="waves-effect waves-light btn green">Nuevo registro</a>
+        <a href='./Principal.php' class="waves-effect waves-light btn orange">Ver registro</a>
+    </div>
+
+
+<?php
+$content = ob_get_clean();
+include './CSS/Plantilla.php';
+?>

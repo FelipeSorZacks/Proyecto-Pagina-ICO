@@ -1,18 +1,37 @@
+<?php
+// Título específico de la página
+$title = "Inicio";
+// Contenido específico de la página
+ob_start();
+?>
 
+<div class="row">
+    <div>
+        <h1>Login del Sistema</h1>
+        
+        <div class="col s12 m5">
+        &nbsp;
+            <form method="POST" action="logica/loguear.php">
+                <input type="text" name="no_cuenta" placeholder="Numero de Cuenta" />
+                <br />
+                <input type="password" name="clave" placeholder="Contraseña" />
+                <br />
 
-  <div class="row">
-        <div   class="col s12 m5">
-            <div>
-                <h1>Login de sistema</h1>
-                <form   method="POST"  action="logica/loguear.php">
-                    <input type="text" name="no_cuenta" placeholder="Numero de Cuenta" />
-                        <br />
-                    <input type="text" name="clave" placeholder="Contraseña" />
-                        <br />
-                    <button type="submit">Inicar Sesion</button>
-                </form> 
+                <div>
+                    <br> <br>
+                    <button type="submit" name="submit" class="btn waves-effect waves-light blue">Iniciar Sesión</button>
+                </div>
+            </form> 
+
             
-            </div>
         </div>
+    </div>
+</div>
 
-   </div>
+<?php
+// Almacena el contenido generado en una variable
+$content = ob_get_clean();
+
+// Incluye la plantilla
+include './CSS/Plantilla.php';
+?>

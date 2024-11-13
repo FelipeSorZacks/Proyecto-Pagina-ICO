@@ -1,3 +1,8 @@
+<?php
+$title = "Inicio Error";
+ob_start();
+?>
+
 
 <h1>Login error</h1>
 <div  >
@@ -14,3 +19,9 @@
         </form>
     
 </div>
+
+
+<?php
+$content = ob_get_clean();
+include './CSS/Plantilla.php';
+?>

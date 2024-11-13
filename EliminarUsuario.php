@@ -1,3 +1,8 @@
+<?php
+$title = "Eliminar Usuario";
+ob_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,3 +27,8 @@
 </body>
 
 </html>
+
+<?php
+$content = ob_get_clean();
+include './CSS/Plantilla.php';
+?>
