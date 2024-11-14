@@ -22,8 +22,6 @@ ob_start();
                     <button type="submit" name="submit" class="btn waves-effect waves-light blue">Iniciar Sesión</button>
                 </div>
             </form> 
-
-            
         </div>
     </div>
 </div>

@@ -4,20 +4,26 @@ ob_start();
 ?>
 
 
-<h1>Login error</h1>
-<div  >
-    
-        <form method="POST" action="logica/loguear.php">
+<div class="row">
+    <div>
+        <h1>Login del Sistema</h1>
+        <h4 style="color: #ff4646 ;">Error al introducir usuario</h4>
+        
+        <div class="col s12 m5">
+        &nbsp;
+            <form method="POST" action="logica/loguear.php">
+                <input type="text" name="no_cuenta" placeholder="Numero de Cuenta" />
+                <br />
+                <input type="password" name="clave" placeholder="Contraseña" />
+                <br />
 
-            <input type="text" name="no_cuenta" placeholder="Numero de Cuenta" />
-            <br />
-            <input type="text" name="clave" placeholder="Contraseña" />
-            <br />
-
-            <button type="submit">Inicar Sesion</button>
-
-        </form>
-    
+                <div>
+                    <br> <br>
+                    <button type="submit" name="submit" class="btn waves-effect waves-light blue">Iniciar Sesión</button>
+                </div>
+            </form> 
+        </div>
+    </div>
 </div>
 
 
@@ -25,3 +31,5 @@ ob_start();
 $content = ob_get_clean();
 include './CSS/Plantilla.php';
 ?>
+
+

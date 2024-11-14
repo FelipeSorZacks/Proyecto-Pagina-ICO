@@ -3,6 +3,7 @@ $title = "Registros";
 ob_start();
 ?>
 
+
 <?php
 session_start();
 $no_cuenta= $_SESSION['usermane'];//413112576
@@ -29,6 +30,10 @@ $resultado = $conexion->query($consulta_sql);
 
 // Retorna el numero de filas del resultado. Si encuentra mas de uno lo usamos para imprimir el resultado en nuestra tabla
 $count = mysqli_num_rows($resultado); 
+
+echo " <h1>Registros</h1>
+    <tr>
+    </tr>";
  
 echo "<table border='2' >
     <tr>
@@ -66,13 +71,16 @@ if ( $count>0 ){
     
     echo " <h1 style='color:red' >Sin Ningun registro</h1>";
  } 
-  echo "
-    <h1><a href='EliminarUsuario.php'>ElimnarUsuario</a></h1>
-    <h1><a href='Registro.php'>Registro</a></h1>
-    ";
+  
 
 }
 ?>
+
+<div class="center-align" style="margin-top: 20px;">
+    <a href='EliminarUsuario.php' class="waves-effect waves-light btn green">Elimnar Usuario</a>
+    <a href='./Registro.php' class="waves-effect waves-light btn orange">Nuevo registro</a>
+
+</div>
 
 <?php
 $content = ob_get_clean();

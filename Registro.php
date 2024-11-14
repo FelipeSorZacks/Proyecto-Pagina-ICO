@@ -18,10 +18,11 @@ ob_start();
     <div>
         
     </div>
+    
     <div>
         <form action="./logica/enviarRegistro.php" method="post">
         <!-- <form action="./tempo.php" method="get"> -->
-            <hr>
+            
             &nbsp;
             <div>
                 <label for="nombre_usuario">Ingresa nombre usuario:</label>
@@ -55,7 +56,7 @@ ob_start();
 <div class="center-align" style="margin-top: 20px;">
         <a href='./Registro.php' class="waves-effect waves-light btn green">Nuevo registro</a>
         <a href='./Principal.php' class="waves-effect waves-light btn orange">Ver registro</a>
-    </div>
+</div>
 
 
 <?php

@@ -9,20 +9,27 @@ ob_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 
 <body>
-    <h1 style=" text-align: center;" >Elimina Usuario</h1>
+    <h1 style=" text-align: center;" >Eliminar Usuario</h1>
+    <hr>
+    <p></p>
+    &nbsp;
     <form style=" text-align: center;" method="POST" action="./logica/deleteUsuario.php">
 
         <input  type="text" name="no_cuenta" placeholder="Numero de Cuenta" />
         <br />
-        <button type="submit">Eliminar usuario</button>
+        &nbsp;
+        <p></p>
+        <button type="submit" name="submit" class="btn waves-effect waves-light blue">Eliminar usuario</button>
 
     </form>
-    
-    <h1><a href="Principal.php">Inicio de listas</a></h1>
+ 
+    <div class="center-align" style="margin-top: 20px;">
+        <a href='./Registro.php' class="waves-effect waves-light btn green">Nuevo registro</a>
+        <a href='./Principal.php' class="waves-effect waves-light btn orange">Ver registros</a>
+    </div>
 
 </body>
 
