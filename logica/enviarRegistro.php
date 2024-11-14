@@ -35,6 +35,12 @@ if($count==1){
         echo "<br> <h1>Usuario creado con exito</h1>";
         echo "<a href='../Registro.php'>Puedes generar un Nuevo registro</a>";
         echo "<a href='../Principal.php'>Ver registros</a>";
+
+        echo "
+        <a href='./Registro.php' class="waves-effect waves-light btn green">Nuevo registro</a>
+        <a href='./Principal.php' class="waves-effect waves-light btn green">Ver registros</a>
+
+        ";
 }
 ?>
 
