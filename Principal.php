@@ -15,11 +15,11 @@ if(!isset($no_cuenta)){
 }else{
     
     echo "<h1> hola tu numero de cuenta es $no_cuenta </h1> ";
-    echo "<a href='logica/salir.php'> SALIR</a>";
+    echo "<a href='./salir.php'> SALIR</a>";
     
 
     // se usa el requiere para si psi se necesita el archivo conexion
-require "./logica/conexion.php";
+require "./conexion.php";
 mysqli_set_charset($conexion,'utf8');
 
 //genear el query

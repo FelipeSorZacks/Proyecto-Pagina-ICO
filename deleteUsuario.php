@@ -6,5 +6,5 @@ $consulta="DELETE FROM persona WHERE no_cuenta = ";
 
 mysqli_query($conexion, $consulta . $registroEliminado);
 mysqli_close($conexion);
-header('Location: ../EliminarUsuario.php');
+header('Location: ./EliminarUsuario.php');
 ?>

@@ -1,5 +1,5 @@
 <?php
-require 'conexion.php';
+require './conexion.php';
 session_start();
 
 $no_cuenta = $_POST['no_cuenta'];
@@ -20,11 +20,11 @@ if ($array['contar'] > 0) {
     // en la variable session se guarda el numero de cuenta esto para poder acarrearla
     $_SESSION['usermane'] = $no_cuenta;
 
-    header("location: ../Principal.php");
+    header("location: ./Principal.php");
     //header("location: ../inicio.php");
     
 } else {
 
-    header("location: ../indexError.php");
+    header("location: ./indexError.php");
 }
 ?>

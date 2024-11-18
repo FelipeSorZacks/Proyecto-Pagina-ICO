@@ -11,7 +11,7 @@ ob_start();
         
         <div class="col s12 m5">
         &nbsp;
-            <form method="POST" action="logica/loguear.php">
+            <form method="POST" action="./loguear.php">
                 <input type="text" name="no_cuenta" placeholder="Numero de Cuenta" />
                 <br />
                 <input type="password" name="clave" placeholder="Contraseña" />

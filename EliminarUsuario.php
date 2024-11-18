@@ -16,7 +16,7 @@ ob_start();
     <hr>
     <p></p>
     &nbsp;
-    <form style=" text-align: center;" method="POST" action="./logica/deleteUsuario.php">
+    <form style=" text-align: center;" method="POST" action="./deleteUsuario.php">
 
         <input  type="text" name="no_cuenta" placeholder="Numero de Cuenta" />
         <br />

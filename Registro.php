@@ -20,7 +20,7 @@ ob_start();
     </div>
     
     <div>
-        <form action="./logica/enviarRegistro.php" method="post">
+        <form action="./enviarRegistro.php" method="post">
         <!-- <form action="./tempo.php" method="get"> -->
             
             &nbsp;

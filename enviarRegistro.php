@@ -17,7 +17,7 @@ $count =mysqli_num_rows($resultado);
 
 if($count==1){
     echo"<h2>El usuario ya esta registrado</h2>";
-    echo "<h4><a href='../Registro.php'>Nuevo registro</a></h4>";
+    echo "<h4><a href='./Registro.php'>Nuevo registro</a></h4>";
 
 }else{
 
@@ -33,18 +33,15 @@ if($count==1){
         )");
         
         echo "<br> <h1>Usuario creado con exito</h1>";
-        echo "<a href='../Registro.php'>Puedes generar un Nuevo registro</a>";
-        echo "<a href='../Principal.php'>Ver registros</a>";
 
         echo "
-        <a href='./Registro.php' class="waves-effect waves-light btn green">Nuevo registro</a>
-        <a href='./Principal.php' class="waves-effect waves-light btn green">Ver registros</a>
-
+        <a href='./Registro.php' class='waves-effect waves-light btn green'>Nuevo registro</a>
+        <a href='./Principal.php' class='waves-effect waves-light btn orange'>Ver registros</a>
         ";
 }
 ?>
 
 <?php
 $content = ob_get_clean();
-include '../CSS/Plantilla.php';
+include './CSS/Plantilla.php';
 ?>

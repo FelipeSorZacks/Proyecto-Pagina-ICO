@@ -1,9 +1,9 @@
 <?php
 $title = "Conexion";
 
-$host_db = "localhost:3306";
-$user_db = "root";
-$pass_db = "Sharilamejor1";
+$host_db = "192.168.11.230:3306";
+$user_db = "huronmarron";
+$pass_db = "123456";
 $db_name = "test_php";
 
 $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);

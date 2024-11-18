@@ -1,6 +1,6 @@
 <?php
 // se usa el requiere para si psi se necesita el archivo conexion
-require "./logica/conexion.php";
+require "./conexion.php";
 mysqli_set_charset($conexion,'utf8');
 
 //genear el query
