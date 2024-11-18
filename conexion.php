@@ -1,7 +1,7 @@
 <?php
 $title = "Conexion";
 
-$host_db = "192.168.11.230:3306";
+$host_db = "192.168.1.37:3306";
 $user_db = "huronmarron";
 $pass_db = "123456";
 $db_name = "test_php";
